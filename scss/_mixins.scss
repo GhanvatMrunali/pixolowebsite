@@ -16,3 +16,16 @@
 @mixin sans-serif-font() {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+
+
+/*=box{}
+    webkit-border-radius: 100%;
+    moz-border-radius; 100%;
+    box-shadow: 0 5px 10px #555;
+    webkit-box-shadow: 0 5px 10px #555;
+    
+    
+    background: -webkit-linear-gradient{orangered, yellow}
+    background: -o-linear-gradient{orangered, yellow}
+    background: -moz-linear-gradient{orangered, yellow}
+    background: -linear-gradient{orange red, yellow}*/

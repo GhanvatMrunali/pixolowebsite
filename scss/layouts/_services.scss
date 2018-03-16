@@ -1,12 +1,55 @@
 // Styling for the services section
 .service-box {
-  max-width: 400px;
+    max-width: 400px;
 }
 
 .ml2 .letter {
-  display: inline-block;
-  line-height: 0.5em;
+    display: inline-block;
+    line-height: 0.5em;
 }
- //JavaScript
 
+//JavaScript
 // Wrap every letter in a span
+//Tagline
+.before-test {
+    text-align: left;
+    position: relative;
+    &:before {
+        content: "";
+        height: 5px;
+        width: 40%;
+        position: absolute;
+        background: #7cd2cd;
+        bottom: 5px;
+        z-index: -1;
+        transform: skewX(-20deg);
+        left: 3px;
+    }
+    &:after {
+        content: "";
+    }
+}
+
+.about-thumbnails-wrapper {
+    .about-thumbnail {
+        padding: 10px;
+        
+        .about-image {
+            width: 100%;
+            border: 3px solid #8e8080;
+            
+        }
+        .about-name {
+            font-size: 1.5em;
+            color: #7cd2cd;
+        }
+        .about-designation {
+             font-size: 0.8em;
+            
+        }
+    }
+}
+
+.client-image{
+    width: 100%;
+}

@@ -114,14 +114,14 @@ gulp.task('default', ['css', 'js', 'vendor']);
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+        baseDir: "./"
     }
   });
 });
 
 // Dev task
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
-  gulp.watch('./scss/*.scss', ['css']);
+  gulp.watch('./scss/*/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
