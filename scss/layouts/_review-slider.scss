@@ -1,0 +1,21 @@
+.card-wrapper {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .review-name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
+    .review-card {
+        .review-text{
+            font-size: 1rem;
+        }
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
+}

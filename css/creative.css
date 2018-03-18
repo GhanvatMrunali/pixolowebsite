@@ -1,14 +1,3 @@
-/*=box{}
-    webkit-border-radius: 100%;
-    moz-border-radius; 100%;
-    box-shadow: 0 5px 10px #555;
-    webkit-box-shadow: 0 5px 10px #555;
-    
-    
-    background: -webkit-linear-gradient{orangered, yellow}
-    background: -o-linear-gradient{orangered, yellow}
-    background: -moz-linear-gradient{orangered, yellow}
-    background: -linear-gradient{orange red, yellow}*/
 body,
 html {
   width: 100%;
@@ -234,47 +223,67 @@ header.masthead p {
   line-height: 0.5em;
 }
 
-.before-test {
-  text-align: left;
-  position: relative;
+.client-image {
+  width: 100%;
 }
 
-.before-test:before {
-  content: "";
-  height: 5px;
-  width: 40%;
-  position: absolute;
-  background: #7cd2cd;
-  bottom: 5px;
-  z-index: -1;
-  transform: skewX(-20deg);
-  left: 3px;
-}
-
-.before-test:after {
-  content: "";
+.AR-slider-item {
+  width: 100%;
 }
 
 .about-thumbnails-wrapper .about-thumbnail {
-  padding: 10px;
+  padding: 54px;
 }
 
 .about-thumbnails-wrapper .about-thumbnail .about-image {
+  width: 67%;
+  border: 3px solid #3b3b3b;
+}
+
+.about-thumbnails-wrapper .about-thumbnail .app-images-wrapper {
+  position: relative;
+  width: 67%;
+  margin: auto;
+}
+
+.about-thumbnails-wrapper .about-thumbnail .app-images-wrapper .app-about-image {
   width: 100%;
-  border: 3px solid #8e8080;
 }
 
-.about-thumbnails-wrapper .about-thumbnail .about-name {
-  font-size: 1.5em;
-  color: #7cd2cd;
+.about-thumbnails-wrapper .about-thumbnail .app-images-wrapper .app-image {
+  position: absolute;
+  top: -20px;
+  left: -18px;
+  width: 60px;
 }
 
-.about-thumbnails-wrapper .about-thumbnail .about-designation {
-  font-size: 0.8em;
+.about-thumbnails-wrapper .about-thumbnail .text-wrapper {
+  position: relative;
 }
 
-.client-image {
+.about-thumbnails-wrapper .about-thumbnail .text-wrapper:before {
+  content: "";
+  position: absolute;
+  background: url(../img/scribble.png);
   width: 100%;
+  left: -19px;
+  z-index: -1;
+  height: 191px;
+  background-repeat: no-repeat;
+}
+
+.about-thumbnails-wrapper .about-thumbnail .text-wrapper .title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 16.2px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3b3b3b;
+}
+
+.about-thumbnails-wrapper .about-thumbnail .text-wrapper .text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15.5px;
+  line-height: 20.7px;
 }
 
 .portfolio-box {
@@ -340,6 +349,94 @@ header.masthead p {
   }
 }
 
+.AR-effect-wrapper {
+  position: relative;
+}
+
+.AR-effect-wrapper #AR-slider-wrapper .AR-slider-item img {
+  width: 100%;
+}
+
+.AR-effect-wrapper .mobile-wrapper {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.AR-effect-wrapper .character-wrapper {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.AR-effect-wrapper .character-wrapper .character-image {
+  height: 252px;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.card-wrapper img {
+  width: 100%;
+}
+
+.card-wrapper .review-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.card-wrapper .review-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.card-wrapper .review-card .review-text {
+  font-size: 1rem;
+}
+
+.client-thumbnails-wrapper .client-thumbnail {
+  padding: 10px;
+}
+
+.client-thumbnails-wrapper .client-thumbnail .client-image {
+  width: 85%;
+  border: 3px solid #8e8080;
+}
+
+.client-thumbnails-wrapper .client-thumbnail .client-name {
+  font-size: 1.5em;
+  color: #7cd2cd;
+}
+
+.client-thumbnails-wrapper .client-thumbnail .client-designation {
+  font-size: 0.8em;
+}
+
+.team-thumbnails-wrapper .team-thumbnail {
+  padding: 10px;
+}
+
+.team-thumbnails-wrapper .team-thumbnail .team-image {
+  width: 85%;
+  border: 3px solid #8e8080;
+}
+
+.team-thumbnails-wrapper .team-thumbnail .team-name {
+  font-size: 1.5em;
+  color: #7cd2cd;
+}
+
+.team-thumbnails-wrapper .team-thumbnail .team-designation {
+  font-size: 0.8em;
+}
+
 .text-primary {
   color: #7cd2cd !important;
 }
@@ -377,4 +474,31 @@ header.masthead p {
   background-color: #036;
   display: inline-block;
   border-radius: 100%;
+}
+
+.section-title {
+  text-align: left;
+  position: relative;
+  font-size: 29px;
+}
+
+.section-title .first-letter {
+  font-size: 40px;
+  color: #7cd2cd !important;
+}
+
+.section-title:before {
+  content: "";
+  height: 5px;
+  width: 40%;
+  position: absolute;
+  background: #7cd2cd;
+  bottom: 9px;
+  z-index: -1;
+  transform: skewX(-20deg);
+  left: 3px;
+}
+
+.section-title:after {
+  content: "";
 }

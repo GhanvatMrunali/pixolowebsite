@@ -1,0 +1,19 @@
+.client-thumbnails-wrapper {
+    .client-thumbnail {
+        padding: 10px;
+
+        .client-image {
+            width: 85%;
+            border: 3px solid #8e8080;
+
+        }
+        .client-name {
+            font-size: 1.5em;
+            color: #7cd2cd;
+        }
+        .client-designation {
+            font-size: 0.8em;
+
+        }
+    }
+}

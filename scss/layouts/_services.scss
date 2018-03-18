@@ -11,45 +11,66 @@
 //JavaScript
 // Wrap every letter in a span
 //Tagline
-.before-test {
-    text-align: left;
-    position: relative;
-    &:before {
-        content: "";
-        height: 5px;
-        width: 40%;
-        position: absolute;
-        background: #7cd2cd;
-        bottom: 5px;
-        z-index: -1;
-        transform: skewX(-20deg);
-        left: 3px;
-    }
-    &:after {
-        content: "";
-    }
+
+
+
+
+
+.client-image {
+    width: 100%;
 }
+
+.AR-slider-item {
+    width: 100%;
+}
+
 
 .about-thumbnails-wrapper {
     .about-thumbnail {
-        padding: 10px;
-        
+        padding: 54px;
         .about-image {
-            width: 100%;
-            border: 3px solid #8e8080;
-            
+            width: 67%;
+            border: 3px solid $text-black;
         }
-        .about-name {
-            font-size: 1.5em;
-            color: #7cd2cd;
+        .app-images-wrapper {
+            position: relative;
+            width: 67%;
+            margin: auto;
+            .app-about-image {
+                width: 100%;
+            }
+            .app-image {
+                position: absolute;
+                top:-20px;
+                left: -18px;
+                width: 60px;
+            }
         }
-        .about-designation {
-             font-size: 0.8em;
-            
+        .text-wrapper {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                background: url(../img/scribble.png);
+                width: 100%;
+                left: -19px;
+                z-index: -1;
+                height: 191px;
+                background-repeat: no-repeat;
+            }
+            .title {
+                font-weight: bold;
+                font-size: 1rem;
+                margin-top: 16.2px;
+                @include montserrat();
+
+                color: $text-black;
+            }
+            .text {
+                @include nunito();
+                font-size: 15.5px;
+                line-height: 20.7px;
+            }
         }
     }
-}
-
-.client-image{
-    width: 100%;
 }

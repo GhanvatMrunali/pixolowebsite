@@ -1,0 +1,19 @@
+@mixin serif-font() {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin sans-serif-font() {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin montserrat() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin cursive() {
+    font-family: 'Indie Flower', cursive;
+}
+
+@mixin nunito() {
+    font-family: 'Nunito Sans', sans-serif;
+}

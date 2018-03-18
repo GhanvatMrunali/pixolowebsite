@@ -1,0 +1,26 @@
+.section-title {
+    text-align: left;
+    position: relative;
+    font-size: 29px; 
+
+    .first-letter {
+        font-size: 40px;
+        color: $primary !important;
+    }
+    &:before {
+        content: "";
+        height: 5px;
+        width: 40%;
+        position: absolute;
+        background: $primary;
+        bottom: 9px;
+        z-index: -1;
+        transform: skewX(-20deg);
+        left: 3px;
+    }
+    &:after {
+        content: "";
+    }
+
+
+}

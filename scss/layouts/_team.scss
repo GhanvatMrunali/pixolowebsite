@@ -1,0 +1,19 @@
+.team-thumbnails-wrapper {
+    .team-thumbnail {
+        padding: 10px;
+
+        .team-image {
+            width: 85%;
+            border: 3px solid #8e8080;
+
+        }
+        .team-name {
+            font-size: 1.5em;
+            color: #7cd2cd;
+        }
+        .team-designation {
+            font-size: 0.8em;
+
+        }
+    }
+}
