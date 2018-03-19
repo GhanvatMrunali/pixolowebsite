@@ -1,17 +1,38 @@
 .card-wrapper {
+       
     position: relative;
+    border: 5px solid #e0d9d9;
+    
     img {
-        width: 100%;
+        width: 22%;
     }
+    
     .review-name {
+        position: absolute;
+       transform: skewX(-4deg);
         position: absolute;
         top: 0;
         left: 0;
-        width: 50%;
+        .logo{}  
+    }
+    &:before {
+                content: "";
+                position: absolute;
+                background: url(../img/scribble.png);
+                width: 100%;
+                left: -19px;
+                z-index: -1;
+                height: 191px;
+                background-repeat: no-repeat;
+            }
+    .skew{
+       
     }
     .review-card {
-        .review-text{
+         
+        .review-text {
             font-size: 1rem;
+            
         }
         position: absolute;
         top: 0;

@@ -1,0 +1,32 @@
+.contact-thumbnail-wrapper {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        background: url(../img/envelope.jpg);
+        width: 100%;
+        left: -19px;
+        z-index: -1;
+        height: 191px;
+        background-repeat: no-repeat;
+    }
+    &:after {
+        content: "";
+    }
+}
+
+.email-letter {
+    color: #f52b2b;
+}
+
+.phone {
+    margin-right: 97px;
+    margin-top: 73px;
+    color: $text-black;
+}
+.email{
+    color: $text-black;
+}
+.contact-form-thumbnail{
+    margin-top: 40px;
+}

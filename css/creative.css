@@ -364,6 +364,10 @@ header.masthead p {
   width: 100%;
 }
 
+.AR-effect-wrapper .mobile-wrapper .mobile-image {
+  width: 17%;
+}
+
 .AR-effect-wrapper .character-wrapper {
   text-align: center;
   width: 100%;
@@ -372,22 +376,35 @@ header.masthead p {
 }
 
 .AR-effect-wrapper .character-wrapper .character-image {
-  height: 252px;
+  height: 310px;
 }
 
 .card-wrapper {
   position: relative;
+  border: 5px solid #e0d9d9;
 }
 
 .card-wrapper img {
-  width: 100%;
+  width: 22%;
 }
 
 .card-wrapper .review-name {
   position: absolute;
+  transform: skewX(-4deg);
+  position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+}
+
+.card-wrapper:before {
+  content: "";
+  position: absolute;
+  background: url(../img/scribble.png);
+  width: 100%;
+  left: -19px;
+  z-index: -1;
+  height: 191px;
+  background-repeat: no-repeat;
 }
 
 .card-wrapper .review-card {
@@ -420,21 +437,66 @@ header.masthead p {
 }
 
 .team-thumbnails-wrapper .team-thumbnail {
-  padding: 10px;
+  padding: 45px;
 }
 
 .team-thumbnails-wrapper .team-thumbnail .team-image {
-  width: 85%;
+  width: 83%;
   border: 3px solid #8e8080;
 }
 
 .team-thumbnails-wrapper .team-thumbnail .team-name {
   font-size: 1.5em;
   color: #7cd2cd;
+  font-family: 'Amatic SC', cursive;
 }
 
 .team-thumbnails-wrapper .team-thumbnail .team-designation {
-  font-size: 0.8em;
+  font-size: 0.9em;
+  font-family: 'Varela Round', sans-serif;
+  color: #3b3b3b;
+}
+
+header.masthead {
+  background: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+}
+
+.contact-thumbnail-wrapper {
+  position: relative;
+}
+
+.contact-thumbnail-wrapper:before {
+  content: "";
+  position: absolute;
+  background: url(../img/envelope.jpg);
+  width: 100%;
+  left: -19px;
+  z-index: -1;
+  height: 191px;
+  background-repeat: no-repeat;
+}
+
+.contact-thumbnail-wrapper:after {
+  content: "";
+}
+
+.email-letter {
+  color: #f52b2b;
+}
+
+.phone {
+  margin-right: 97px;
+  margin-top: 73px;
+  color: #3b3b3b;
+}
+
+.email {
+  color: #3b3b3b;
+}
+
+.contact-form-thumbnail {
+  margin-top: 40px;
 }
 
 .text-primary {
@@ -501,4 +563,14 @@ header.masthead p {
 
 .section-title:after {
   content: "";
+}
+
+.btn btn-default {
+  background: #313030;
+  color: #fff;
+}
+
+.send-button {
+  background: #3b3b3b !important;
+  color: #fff !important;
 }
