@@ -353,6 +353,10 @@ header.masthead p {
   position: relative;
 }
 
+.AR-effect-wrapper #AR-slider-wrapper .AR-slider-item {
+  width: 140%;
+}
+
 .AR-effect-wrapper #AR-slider-wrapper .AR-slider-item img {
   width: 100%;
 }
@@ -365,7 +369,7 @@ header.masthead p {
 }
 
 .AR-effect-wrapper .mobile-wrapper .mobile-image {
-  width: 17%;
+  width: 21%;
 }
 
 .AR-effect-wrapper .character-wrapper {
@@ -376,7 +380,7 @@ header.masthead p {
 }
 
 .AR-effect-wrapper .character-wrapper .character-image {
-  height: 310px;
+  height: 380px;
 }
 
 .card-wrapper {
@@ -446,6 +450,7 @@ header.masthead p {
 }
 
 .team-thumbnails-wrapper .team-thumbnail .team-name {
+  margin-top: 7px;
   font-size: 1.5em;
   color: #7cd2cd;
   font-family: 'Amatic SC', cursive;
@@ -460,43 +465,6 @@ header.masthead p {
 header.masthead {
   background: url(../img/banner.jpg);
   background-repeat: no-repeat;
-}
-
-.contact-thumbnail-wrapper {
-  position: relative;
-}
-
-.contact-thumbnail-wrapper:before {
-  content: "";
-  position: absolute;
-  background: url(../img/envelope.jpg);
-  width: 100%;
-  left: -19px;
-  z-index: -1;
-  height: 191px;
-  background-repeat: no-repeat;
-}
-
-.contact-thumbnail-wrapper:after {
-  content: "";
-}
-
-.email-letter {
-  color: #f52b2b;
-}
-
-.phone {
-  margin-right: 97px;
-  margin-top: 73px;
-  color: #3b3b3b;
-}
-
-.email {
-  color: #3b3b3b;
-}
-
-.contact-form-thumbnail {
-  margin-top: 40px;
 }
 
 .text-primary {
