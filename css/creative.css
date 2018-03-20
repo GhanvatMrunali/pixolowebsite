@@ -252,7 +252,7 @@ header.masthead p {
 
 .about-thumbnails-wrapper .about-thumbnail .app-images-wrapper .app-image {
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: -18px;
   width: 60px;
 }
@@ -467,6 +467,19 @@ header.masthead {
   background-repeat: no-repeat;
 }
 
+.contact-thumbnail-wrapper .contact-thumbnail {
+  margin-top: 50px;
+}
+
+.contact-thumbnail-wrapper .contact-form-thumbnail {
+  margin-top: 50px;
+}
+
+.contact-thumbnail-wrapper .contact-form-thumbnail .form-group .form-control {
+  background: none;
+  border: 1px solid #a1a4a7;
+}
+
 .text-primary {
   color: #7cd2cd !important;
 }
@@ -539,6 +552,7 @@ header.masthead {
 }
 
 .send-button {
+  border-radius: none;
   background: #3b3b3b !important;
   color: #fff !important;
 }
