@@ -1,42 +1,92 @@
 .card-wrapper {
-       
+    width: 90%;
+    margin: auto;
     position: relative;
-    border: 5px solid #e0d9d9;
-    
-    img {
-        width: 22%;
+    height: 250px;
+    background: white;
+    overflow: hidden;
+
+    &:hover {
+        .review-name {
+            left: -20%;
+
+        }
+        .review-card {
+            right: -40%;
+        }
+        .client-logo-wrapper {
+            .client-logo {
+                opacity: 1;
+
+            }
+        }
     }
-    
-    .review-name {
+
+    .client-logo-wrapper {
         position: absolute;
-       transform: skewX(-4deg);
-        position: absolute;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
-        .logo{}  
-    }
-    &:before {
-                content: "";
-                position: absolute;
-                background: url(../img/scribble.png);
-                width: 100%;
-                left: -19px;
-                z-index: -1;
-                height: 191px;
-                background-repeat: no-repeat;
-            }
-    .skew{
-       
-    }
-    .review-card {
-         
-        .review-text {
-            font-size: 1rem;
-            
+        text-align: center;
+        padding: 14% 0;
+
+        .client-logo {
+            width: 25%;
+            margin-left: -20%;
+            transition: 0.8s all;
+            opacity: 0;
+            display: inline-block;
         }
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
+
+
     }
+    .review-name {
+        width: 39.4%;
+        background: #dadada;
+        height: 100%;
+        position: absolute;
+        left: -10%;
+        transform: skew(-20deg);
+        padding: 15% 0;
+        transition: 0.4s all;
+        box-shadow: 1px 0 0px 0px rgba(0, 0, 0, 0.53);
+        .c-name {
+            font-size: 0.9em;
+            font-family: 'Bree Serif', serif;
+            margin-top: 10px;
+            color: black;
+            margin-left: 22%;
+            transform: skew(20deg);
+        }
+        .logo {
+            transform: skew(20deg);
+            width: 28%;
+            display: inline-block;
+        }
+    }
+
+    .review-card {
+        width: 79.4%;
+        position: absolute;
+        right: -10%;
+        background: #878e87;
+        height: 100%;
+        transform: skew(-20deg);
+        transition: 0.4s all;
+        box-shadow: -1px 0 0px 0px rgba(0, 0, 0, 0.53);
+        .review-text {
+            transform: skew(20deg);
+            font-size: 1em;
+            padding: 15% 8%;
+            margin-right: 18%;
+            color: white;
+        }
+    }
+
+}
+
+
+a {
+    color: white;
 }

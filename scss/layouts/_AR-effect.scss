@@ -1,10 +1,18 @@
 .AR-effect-wrapper {
     position: relative;
+    height: 22vw;
     #AR-slider-wrapper {
+        margin: 0;
+        height: 22vh;
+        padding: 15% 0;
         .AR-slider-item {
             width: 140%;
+            text-align: center !important;
+            text-align: center;
             img {
-                width: 100%;
+                margin: auto;
+                border: 1px solid #c1baba;
+                width: 70%;
             }
         }
     }
@@ -14,7 +22,7 @@
         top: 0;
         width: 100%;
         .mobile-image {
-            width: 21%
+            width: 30%;
         }
     }
     .character-wrapper {
@@ -23,7 +31,7 @@
         position: absolute;
         top: 0;
         .character-image {
-            height: 380px;
+            width: 36%;
         }
     }
 }

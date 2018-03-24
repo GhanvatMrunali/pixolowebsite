@@ -17,3 +17,29 @@
         }
     }
 }
+
+.client-section {
+    .clients-row {
+        padding: 60px 0;
+    }
+    .clients-slider {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.29);
+        width: 340px;
+        height: 340px;
+        margin: auto;
+        .client-item {
+            text-align: center;
+            padding: 20px;
+            img {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+    .mogambo-wrapper {
+        text-align: center;
+        img {
+            width:45%;
+        }
+    }
+}
